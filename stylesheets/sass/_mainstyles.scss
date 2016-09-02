@@ -133,7 +133,6 @@ body {
     padding-top: $size-16;
 
     @include mq($from:medium) {
-        padding-top: 0;
         width: 50%;
     }
 
