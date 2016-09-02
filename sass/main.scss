@@ -1,0 +1,27 @@
+
+/* Some initial variables */
+
+$black: #1c1c1c;
+
+$size-1: 1px;
+$size-4: 4px;
+$size-8: 8px;
+$size-12: 12px;
+$size-16: 16px;
+$size-20: 20px;
+$size-32: 32px;
+
+/* Breakpoints */
+
+$mq-breakpoints: (
+    extra-small:  300px,
+    small:  400px,
+    medium: 600px,
+    large:    1008px
+) !default;
+
+// New styles //
+
+@import 'mq';
+@import 'reset';
+@import "mainstyles";

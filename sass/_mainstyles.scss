@@ -1,0 +1,125 @@
+html {
+    &,
+    & * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+}
+
+.wrap {
+    max-width: 1008px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+body {
+    background: linear-gradient(to bottom, rgba(#d7ebad, 4), rgba( #9ccd32, 4) 90%);
+    background-repeat: no-repeat;
+}
+
+.site-title {
+    text-align: center;
+}
+
+.site-title__image {
+    max-width: 100%;
+    height: auto;
+    margin-top: -$size-32;
+    margin-bottom: $size-8;
+}
+
+.site-title__link {
+    font-size: $size-12;
+    font-style: italic;
+    text-decoration: underline;
+    padding: $size-8;
+
+    @include mq($from:small) {
+        font-size: $size-16;
+    }
+}
+
+.section__block {
+    padding-top: $size-8;
+
+    @include mq($from:medium) {
+        padding: $size-16;
+    }
+}
+
+.section__row {
+    margin-left: -$size-16;
+}
+
+.section {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    padding-left: $size-16;
+    padding-top: $size-16;
+
+    @include mq($from:medium) {
+        width: 50%;
+    }
+
+    @include mq($from:large) {
+        width: 33.33%;
+    }
+}
+
+.section__image {
+    width: 100%;
+    border: $size-1 solid $black;
+}
+
+.section__title,
+a {
+    padding-bottom: $size-8;
+    font-size: $size-16;
+    text-decoration: none;
+    color: $black;
+}
+
+.site-navigation {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-bottom: $size-8;
+
+    @include mq($from:large) {
+        margin-bottom: $size-16;
+    }
+}
+
+.site-navigation__section {
+    display: inline-block;
+    border: $size-1 solid $black;
+    padding: $size-4;
+
+    @include mq($from:medium) {
+        padding: $size-8;
+    }
+}
+
+.site-navigation__current {
+    font-weight: bold;
+}
+
+.site-navigation__text {
+    font-size: $size-12;
+    text-align: center;
+    text-decoration: none;
+    color: $black;
+
+    @include mq($from:small) {
+        font-size: $size-16;
+    }
+}
+
+.site__copyright {
+    margin-bottom: $size-16;
+}
+
