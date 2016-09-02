@@ -1,3 +1,7 @@
+/*------------------------------------*\
+    # GUTTER STYLES
+\*------------------------------------*/
+
 html {
     &,
     & * {
@@ -14,11 +18,19 @@ html {
     padding: 0 $size-16;
 }
 
+/*------------------------------------*\
+    # BACKGROUND STYLES
+\*------------------------------------*/
+
 body {
     background-color: #9ccd32;
     background: linear-gradient(to bottom, rgba(#d7ebad, 4), rgba( #9ccd32, 4) 90%);
     background-repeat: no-repeat;
 }
+
+/*------------------------------------*\
+    # SITE TITLE AND LOGO STYLES
+\*------------------------------------*/
 
 .site-title {
     text-align: center;
@@ -40,6 +52,50 @@ body {
         font-size: $size-16;
     }
 }
+
+/*------------------------------------*\
+    # SITE NAVIGATION STYLES
+\*------------------------------------*/
+
+.site-navigation {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-bottom: $size-8;
+
+    @include mq($from:large) {
+        margin-bottom: $size-16;
+    }
+}
+
+.site-navigation__section {
+    display: inline-block;
+    border: $size-1 solid $black;
+    padding: $size-4;
+
+    @include mq($from:medium) {
+        padding: $size-8;
+    }
+}
+
+.site-navigation__current {
+    font-weight: bold;
+}
+
+.site-navigation__text {
+    font-size: $size-12;
+    text-align: center;
+    text-decoration: none;
+    color: $black;
+
+    @include mq($from:small) {
+        font-size: $size-16;
+    }
+}
+
+/*------------------------------------*\
+    # IMAGE STYLES
+\*------------------------------------*/
 
 .section__block {
     padding-top: $size-8;
@@ -84,41 +140,9 @@ a {
     color: $black;
 }
 
-.site-navigation {
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-    margin-bottom: $size-8;
-
-    @include mq($from:large) {
-        margin-bottom: $size-16;
-    }
-}
-
-.site-navigation__section {
-    display: inline-block;
-    border: $size-1 solid $black;
-    padding: $size-4;
-
-    @include mq($from:medium) {
-        padding: $size-8;
-    }
-}
-
-.site-navigation__current {
-    font-weight: bold;
-}
-
-.site-navigation__text {
-    font-size: $size-12;
-    text-align: center;
-    text-decoration: none;
-    color: $black;
-
-    @include mq($from:small) {
-        font-size: $size-16;
-    }
-}
+/*------------------------------------*\
+    # COPYRIGHT STYLES
+\*------------------------------------*/
 
 .site__copyright {
     margin-top: $size-16;

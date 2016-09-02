@@ -47,6 +47,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/*------------------------------------*\
+    # GUTTER STYLES
+\*------------------------------------*/
 html, html * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -58,11 +61,17 @@ html, html * {
   margin: 0 auto;
   padding: 0 16px; }
 
+/*------------------------------------*\
+    # BACKGROUND STYLES
+\*------------------------------------*/
 body {
   background-color: #9ccd32;
   background: linear-gradient(to bottom, #d7ebad, #9ccd32 90%);
   background-repeat: no-repeat; }
 
+/*------------------------------------*\
+    # SITE TITLE AND LOGO STYLES
+\*------------------------------------*/
 .site-title {
   text-align: center; }
 
@@ -80,6 +89,41 @@ body {
     .site-title__link {
       font-size: 16px; } }
 
+/*------------------------------------*\
+    # SITE NAVIGATION STYLES
+\*------------------------------------*/
+.site-navigation {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 8px; }
+  @media (min-width: 63em) {
+    .site-navigation {
+      margin-bottom: 16px; } }
+
+.site-navigation__section {
+  display: inline-block;
+  border: 1px solid #1c1c1c;
+  padding: 4px; }
+  @media (min-width: 37.5em) {
+    .site-navigation__section {
+      padding: 8px; } }
+
+.site-navigation__current {
+  font-weight: bold; }
+
+.site-navigation__text {
+  font-size: 12px;
+  text-align: center;
+  text-decoration: none;
+  color: #1c1c1c; }
+  @media (min-width: 25em) {
+    .site-navigation__text {
+      font-size: 16px; } }
+
+/*------------------------------------*\
+    # IMAGE STYLES
+\*------------------------------------*/
 .section__block {
   padding-top: 8px; }
   @media (min-width: 37.5em) {
@@ -115,35 +159,9 @@ a {
   text-decoration: none;
   color: #1c1c1c; }
 
-.site-navigation {
-  display: inline-block;
-  text-align: center;
-  width: 100%;
-  margin-bottom: 8px; }
-  @media (min-width: 63em) {
-    .site-navigation {
-      margin-bottom: 16px; } }
-
-.site-navigation__section {
-  display: inline-block;
-  border: 1px solid #1c1c1c;
-  padding: 4px; }
-  @media (min-width: 37.5em) {
-    .site-navigation__section {
-      padding: 8px; } }
-
-.site-navigation__current {
-  font-weight: bold; }
-
-.site-navigation__text {
-  font-size: 12px;
-  text-align: center;
-  text-decoration: none;
-  color: #1c1c1c; }
-  @media (min-width: 25em) {
-    .site-navigation__text {
-      font-size: 16px; } }
-
+/*------------------------------------*\
+    # COPYRIGHT STYLES
+\*------------------------------------*/
 .site__copyright {
   margin-top: 16px;
   margin-bottom: 16px; }
