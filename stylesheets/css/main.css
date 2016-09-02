@@ -69,6 +69,9 @@ body {
   background: linear-gradient(to bottom, #d7ebad, #9ccd32 90%);
   background-repeat: no-repeat; }
 
+/*------------------------------------*\
+    # VISUALLY HIDDEN STYLES
+\*------------------------------------*/
 .visually-hidden__text {
   border: 0;
   clip: rect(0 0 0 0);
@@ -152,7 +155,6 @@ body {
   padding-top: 16px; }
   @media (min-width: 37.5em) {
     .section {
-      padding-top: 0;
       width: 50%; } }
   @media (min-width: 63em) {
     .section {
