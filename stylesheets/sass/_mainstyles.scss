@@ -11,7 +11,7 @@ html {
     max-width: 1008px;
     height: 100%;
     margin: 0 auto;
-    padding: 0 16px;
+    padding: 0 $size-16;
 }
 
 body {
@@ -121,6 +121,11 @@ a {
 }
 
 .site__copyright {
+    margin-top: $size-16;
     margin-bottom: $size-16;
+
+    @include mq($from:medium) {
+        margin-top: 0;
+    }
 }
 

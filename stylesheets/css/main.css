@@ -145,6 +145,10 @@ a {
       font-size: 16px; } }
 
 .site__copyright {
+  margin-top: 16px;
   margin-bottom: 16px; }
+  @media (min-width: 37.5em) {
+    .site__copyright {
+      margin-top: 0; } }
 
 /*# sourceMappingURL=main.css.map */
