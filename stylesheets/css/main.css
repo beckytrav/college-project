@@ -47,6 +47,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/*------------------------------------*\
+    # GUTTER STYLES
+\*------------------------------------*/
 html, html * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -58,17 +61,23 @@ html, html * {
   margin: 0 auto;
   padding: 0 16px; }
 
+/*------------------------------------*\
+    # BACKGROUND STYLES
+\*------------------------------------*/
 body {
+  background-color: #9ccd32;
   background: linear-gradient(to bottom, #d7ebad, #9ccd32 90%);
   background-repeat: no-repeat; }
 
+/*------------------------------------*\
+    # SITE TITLE AND LOGO STYLES
+\*------------------------------------*/
 .site-title {
   text-align: center; }
 
 .site-title__image {
   max-width: 100%;
   height: auto;
-  margin-top: -32px;
   margin-bottom: 8px; }
 
 .site-title__link {
@@ -80,40 +89,9 @@ body {
     .site-title__link {
       font-size: 16px; } }
 
-.section__block {
-  padding-top: 8px; }
-  @media (min-width: 37.5em) {
-    .section__block {
-      padding: 16px; } }
-
-.section__row {
-  margin-left: -16px; }
-
-.section {
-  display: inline-block;
-  max-width: 100%;
-  height: auto;
-  text-align: center;
-  padding-left: 16px;
-  padding-top: 16px; }
-  @media (min-width: 37.5em) {
-    .section {
-      width: 50%; } }
-  @media (min-width: 63em) {
-    .section {
-      width: 33.33%; } }
-
-.section__image {
-  width: 100%;
-  border: 1px solid #1c1c1c; }
-
-.section__title,
-a {
-  padding-bottom: 8px;
-  font-size: 16px;
-  text-decoration: none;
-  color: #1c1c1c; }
-
+/*------------------------------------*\
+    # SITE NAVIGATION STYLES
+\*------------------------------------*/
 .site-navigation {
   display: inline-block;
   text-align: center;
@@ -143,7 +121,52 @@ a {
     .site-navigation__text {
       font-size: 16px; } }
 
+/*------------------------------------*\
+    # IMAGE STYLES
+\*------------------------------------*/
+.section__block {
+  padding-top: 8px; }
+  @media (min-width: 37.5em) {
+    .section__block {
+      padding: 16px; } }
+
+.section__row {
+  margin-left: -16px; }
+
+.section {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+  padding-left: 16px;
+  padding-top: 16px; }
+  @media (min-width: 37.5em) {
+    .section {
+      padding-top: 0;
+      width: 50%; } }
+  @media (min-width: 63em) {
+    .section {
+      width: 33.33%; } }
+
+.section__image {
+  width: 100%;
+  border: 1px solid #1c1c1c; }
+
+.section__title,
+a {
+  padding-bottom: 8px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #1c1c1c; }
+
+/*------------------------------------*\
+    # COPYRIGHT STYLES
+\*------------------------------------*/
 .site__copyright {
+  margin-top: 16px;
   margin-bottom: 16px; }
+  @media (min-width: 37.5em) {
+    .site__copyright {
+      margin-top: 0; } }
 
 /*# sourceMappingURL=main.css.map */

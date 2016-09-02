@@ -1,3 +1,7 @@
+/*------------------------------------*\
+    # GUTTER STYLES
+\*------------------------------------*/
+
 html {
     &,
     & * {
@@ -11,13 +15,22 @@ html {
     max-width: 1008px;
     height: 100%;
     margin: 0 auto;
-    padding: 0 16px;
+    padding: 0 $size-16;
 }
 
+/*------------------------------------*\
+    # BACKGROUND STYLES
+\*------------------------------------*/
+
 body {
+    background-color: #9ccd32;
     background: linear-gradient(to bottom, rgba(#d7ebad, 4), rgba( #9ccd32, 4) 90%);
     background-repeat: no-repeat;
 }
+
+/*------------------------------------*\
+    # SITE TITLE AND LOGO STYLES
+\*------------------------------------*/
 
 .site-title {
     text-align: center;
@@ -26,7 +39,6 @@ body {
 .site-title__image {
     max-width: 100%;
     height: auto;
-    margin-top: -$size-32;
     margin-bottom: $size-8;
 }
 
@@ -41,47 +53,9 @@ body {
     }
 }
 
-.section__block {
-    padding-top: $size-8;
-
-    @include mq($from:medium) {
-        padding: $size-16;
-    }
-}
-
-.section__row {
-    margin-left: -$size-16;
-}
-
-.section {
-    display: inline-block;
-    max-width: 100%;
-    height: auto;
-    text-align: center;
-    padding-left: $size-16;
-    padding-top: $size-16;
-
-    @include mq($from:medium) {
-        width: 50%;
-    }
-
-    @include mq($from:large) {
-        width: 33.33%;
-    }
-}
-
-.section__image {
-    width: 100%;
-    border: $size-1 solid $black;
-}
-
-.section__title,
-a {
-    padding-bottom: $size-8;
-    font-size: $size-16;
-    text-decoration: none;
-    color: $black;
-}
+/*------------------------------------*\
+    # SITE NAVIGATION STYLES
+\*------------------------------------*/
 
 .site-navigation {
     display: inline-block;
@@ -119,7 +93,62 @@ a {
     }
 }
 
-.site__copyright {
-    margin-bottom: $size-16;
+/*------------------------------------*\
+    # IMAGE STYLES
+\*------------------------------------*/
+
+.section__block {
+    padding-top: $size-8;
+
+    @include mq($from:medium) {
+        padding: $size-16;
+    }
 }
 
+.section__row {
+    margin-left: -$size-16;
+}
+
+.section {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    padding-left: $size-16;
+    padding-top: $size-16;
+
+    @include mq($from:medium) {
+        padding-top: 0;
+        width: 50%;
+    }
+
+    @include mq($from:large) {
+        width: 33.33%;
+    }
+}
+
+.section__image {
+    width: 100%;
+    border: $size-1 solid $black;
+}
+
+.section__title,
+a {
+    padding-bottom: $size-8;
+    font-size: $size-16;
+    text-decoration: none;
+    color: $black;
+}
+
+/*------------------------------------*\
+    # COPYRIGHT STYLES
+\*------------------------------------*/
+
+.site__copyright {
+    margin-top: $size-16;
+    margin-bottom: $size-16;
+
+    @include mq($from:medium) {
+        margin-top: 0;
+    }
+}
