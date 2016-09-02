@@ -98,6 +98,7 @@ body {
   padding-top: 16px; }
   @media (min-width: 37.5em) {
     .section {
+      padding-top: 0;
       width: 50%; } }
   @media (min-width: 63em) {
     .section {
