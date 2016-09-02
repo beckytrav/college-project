@@ -59,7 +59,6 @@ html, html * {
   padding: 0 16px; }
 
 body {
-  height: 100%;
   background: linear-gradient(to bottom, #d7ebad, #9ccd32 90%);
   background-repeat: no-repeat; }
 
