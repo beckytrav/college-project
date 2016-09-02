@@ -58,11 +58,8 @@ html, html * {
   margin: 0 auto;
   padding: 0 16px; }
 
-.test-text {
-  position: absolute;
-  left: -999em; }
-
 body {
+  background-color: #9ccd32;
   background: linear-gradient(to bottom, #d7ebad, #9ccd32 90%);
   background-repeat: no-repeat; }
 
